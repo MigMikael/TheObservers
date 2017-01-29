@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt');
+
+html, body{
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: #000000;
+}
+
+h1, h3, h5, p {
+    color: #FFFFFF;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.well {
+    margin: 2%;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+.well:hover {
+    color: #000000;
+    background: #FFFFFF;
+}
