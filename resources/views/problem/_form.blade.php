@@ -8,10 +8,10 @@
 <div class="form-group">
     {!! Form::label('content', 'Content ', ['class' => 'control-label col-sm-2']) !!}
     <div class="col-sm-10">
-        {!! Form::textarea('content', null, ['class' => 'form-control']) !!}<br>
+        {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
     </div>
 </div>
-<p>ส่วน Content สามารถใส่แท็ก html ได้ทั้งหมด (ยกเว้น h1 h3 h5 และ p)</p>
+<p style="color: #ff0000">ส่วน Content สามารถใส่แท็ก html ได้ทั้งหมด(ยกเว้น h1 h3 h5)</p><br>
 
 <div class="form-group">
     {!! Form::label('answer', 'Answer ', ['class' => 'control-label col-sm-2']) !!}
