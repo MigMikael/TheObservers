@@ -8,7 +8,7 @@
                 <div class="panel-heading">
                     <h2>{{ $problem->name }}</h2>
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" style="padding: 5%">
                     <br>
                     <h4>{!! $problem->content !!}</h4>
                     <br>

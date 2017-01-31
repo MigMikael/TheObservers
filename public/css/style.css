@@ -26,3 +26,7 @@ a:hover, a:visited, a:link, a:active {
     color: #000000;
     background: #FFFFFF;
 }
+
+p.medium {
+    line-height: 150%;
+}

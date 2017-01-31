@@ -21,7 +21,7 @@
                         @foreach($users as $user)
                             @if($user->id != 1)
                             <tr>
-                                <td>{{ $loop->index }}</td>
+                                <td>{{ $loop->index+1 }}</td>
                                 <td>{{ $user->name }}</td>
                                 <td><b>{{ $user->score }}</b></td>
                             </tr>

@@ -43,4 +43,6 @@ Route::group(['middleware' => 'auth'], function (){
     Route::get('problem/{id}', 'ProblemController@show');
 });
 
+Route::get('inform/location/earth', 'ProblemController@handle1');
+Route::post('ask_for_help', 'ProblemController@handle2');
 

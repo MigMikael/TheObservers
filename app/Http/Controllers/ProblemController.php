@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Answer;
 use App\Problem;
 use App\User;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 
 class ProblemController extends Controller
@@ -141,5 +140,21 @@ class ProblemController extends Controller
         }
 
         return redirect()->back();
+    }
+
+    public function handle1()
+    {
+        return 'OK, We receive the message GoodLuck!';
+    }
+
+    public function handle2(Request $request)
+    {
+        $from = $request->get('from');
+        $call = $request->get('call');
+        $message = $request->get('message');
+
+        if($from == 'ultraman jack' && $call == 'ultraseven'){
+            return 'OK, I will help you.';
+        }
     }
 }
