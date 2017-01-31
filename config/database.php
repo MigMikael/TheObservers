@@ -1,7 +1,7 @@
 <?php
 
 $status = env('IS_HOST', 'true');
-if($status = 'false'){
+/*if($status = 'false'){
     return [
 
         'default' => env('DB_CONNECTION', 'mysql'),
@@ -59,7 +59,7 @@ if($status = 'false'){
         ],
     ];
 }
-else{
+else{*/
     $url = parse_url(getenv("DATABASE_URL"));
     $host = $url["host"];
     $username = $url["user"];
@@ -93,4 +93,4 @@ else{
             ],
         ],
     ];
-}
+//}
