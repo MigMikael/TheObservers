@@ -3,6 +3,28 @@
 @section('content')
     <div class="row" style="margin-bottom: 3%">
         <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <div class="panel panel-default">
+                <div class="panel-body" style="text-align: center;">
+                    <div class="btn-group">
+                        <a href="{{ url('problem_prev/'.$problem->id) }}" class="btn-success btn-lg" style="margin: 1%;">
+                            <span class="glyphicon glyphicon-arrow-left"></span> Prev
+                        </a>
+                        <a href="{{ url('problem') }}" class="btn-primary btn-lg" style="margin: 1%">
+                            <span class="glyphicon glyphicon-home"></span>
+                        </a>
+                        <a href="{{ url('problem_next/'.$problem->id) }}" class="btn-success btn-lg" style="margin: 1%">
+                            Next <span class="glyphicon glyphicon-arrow-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div class="row" style="margin-bottom: 3%">
+        <div class="col-sm-2"></div>
         <div class="col-sm-8" style="text-align: center">
             <div class="panel panel-default">
                 <div class="panel-heading">
@@ -69,28 +91,6 @@
                         @endforeach
                         </tbody>
                     </table>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2"></div>
-    </div>
-
-    <div class="row" style="margin-bottom: 3%">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-8">
-            <div class="panel panel-default">
-                <div class="panel-body" style="text-align: center;">
-                    <div class="btn-group">
-                        <a href="{{ url('problem_prev/'.$problem->id) }}" class="btn-success btn-lg" style="margin: 1%;">
-                            <span class="glyphicon glyphicon-arrow-left"></span> Prev
-                        </a>
-                        <a href="{{ url('problem') }}" class="btn-primary btn-lg" style="margin: 1%">
-                            <span class="glyphicon glyphicon-home"></span>
-                        </a>
-                        <a href="{{ url('problem_next/'.$problem->id) }}" class="btn-success btn-lg" style="margin: 1%">
-                            Next <span class="glyphicon glyphicon-arrow-right"></span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
